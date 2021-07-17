@@ -7,6 +7,6 @@ Theme: Career
 
 Members:
 Izaac Chong
-Adrian Foh
+Adrian Foh Wai Mun
 Kuah Jia Chen
 Ho Zheng Jie
