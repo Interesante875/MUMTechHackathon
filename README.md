@@ -5,11 +5,22 @@ for job seeking, and connection with peers, alumni, university career service
 and industry experts
 
 
-Open Category, from 17 July 2021 - 19 July 2021
-Theme: Career for Fresh Graduates
+Open Category:  17 July 2021 - 19 July 2021
+Theme: Career development for Fresh Graduates
 
 Members:
 Izaac Chong,
-Adrian Foh,
+Adrian Foh Wai Mun,
 Kuah Jia Chen,
 Ho Zheng Jie
+
+The link below shows the problem faced by the students (fresh graduates), list of features (user stories),
+analysis of the feasibility, scalability and impact of each feature brought about by the application,
+analysis of the marketability of the web app.
+https://docs.google.com/document/d/1DUfSIDcr0H4FQK2GNbc_mkkfdj9cqQ7qibmrNfNQY1k/edit?usp=sharing (View only access)
+
+The link below shows the wireframe (UI/UX) 
+
+The link below shows the class design
+
+
