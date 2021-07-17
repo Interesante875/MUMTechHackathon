@@ -7,6 +7,126 @@ class EventStatus{
         this._status = status;
     }
 
+    get startingTime(){
+        return this._begin;
+    }
+
+    get endingTime(){
+        return this._end;
+    }
+
+    get status(){
+        return this._status;
+    }
+
+    set startingTime(time){
+        if (time instanceof Date){
+            if (time.valueOf() > new Date().valueOf()){
+                this._begin = time;
+            }else{
+                console.log("The time is not valid!");
+            }
+        }else{
+            console.log("It is not a Date object.");
+        }
+    }
+
+    set endingTime(time){
+        if (time instanceof Date){
+            if (time.valueOf() > new Date().valueOf() && time.valueOf() > this._begin.valueOf()){
+                this._end = time;
+            }else{
+                console.log("The time is not valid!")
+            }
+        }else{
+            console.log("It is not a Date object.");
+        }
+    }
+
+    set status(stat){
+        if (status.toLowerCase() == "soon coming" || this.status.toLowerCase() == "ongoing" ||
+        status.toLowerCase() == "ended"){
+            this._status = stat;
+        }
+    }
+
+    fromData(eventStatusObj){
+        this._begin = eventStatusObj._begin;
+        this._end = eventStatusObj._end;
+        this._status = eventStatusObj._status;
+    }
+
+}
+
+class EventList{
+    constructor(events = null){
+        this._events = events;
+    }
+
+    get events(){
+        return this._events;
+    }
+
+    addEvents(event){
+        if (event instanceof JobOffering || event instanceof JobFair || event instanceof CareerService){
+            this._events.push(event);
+        }else{
+            console.log('The input event is not valid!');
+        }
+    }
+
+    removeEvents(nameOfEvent = '', index = -1){
+        if (nameOfEvent == '' && index <= -1){
+            return;
+        }
+        if (this._events != null && this._events != undefined && this._events.length > 0){
+            if (index == -1 && index >= -1){
+                for (let i = 0; i < this._events.length; i++){
+                    if (this._events[i].name == "nameOfEvent"){
+                        this._events.splice(i, 1);
+                        return;
+                    }
+                }
+            }else{
+                if (index < this._events.length){
+                    this._events.splice(index, 1);
+                }else{
+                    return;
+                }
+            }
+        }else{
+            return;
+        }
+
+        return;
+    }
+
+    sortByDate(ascending = true){
+        if (this._events != null && this._events != undefined && this._events.length > 1){
+            if (ascending){
+                this._events = this._events.sort(
+                    (first, second) => first.startingTime.valueOf() - second.startingTime.valueOf());
+            }else{
+                this._events = this._events.sort(
+                    (first, second) => second.startingTime.valueOf() - first.startingTime.valueOf());
+            }
+        }
+
+        return;
+    }
+
+    sortByName(ascending = true){
+        if (this._events != null && this._events != undefined && this._events.length > 1){
+            if (ascending){
+                this._events = this._events.sort(
+                    (first, second) => first.name.charCodeAt(0) - second.name.charCodeAt(0));
+            }else{
+                this._events = this._events.sort(
+                    (first, second) => second.startingTime.charCodeAt(0) - first.startingTime.charCodeAt(0));
+            }
+        }
+        return;
+    }
 }
 
 class Events{
@@ -24,6 +144,20 @@ class Events{
         this._applicantsList = applicantsList;
         this._status = status;
         this._dateCreated = dateCreated;
+    }
+
+    get name(){
+        return this._name;
+    }
+
+    get startingTime(){
+        return this._status.startingTime;
+    }
+
+    set address(addressInstance){
+        if (addressInstance instanceof Address){
+            this._address = addressInstance;
+        }
     }
 }
 
@@ -116,7 +250,14 @@ class CareerServiceFeed{
 }
 
 class Application{
-    constructor(applicantsProfile = new StudentProfile()){
+    constructor(applicantsProfile, experience, address, contactInfo, refPhone, refName, refEmail, pitch = ""){
         this._applicatnsProfile = applicantsProfile;
+        this._experience = experience;
+        this._address = address;
+        this._contactInfo = contactInfo;
+        this._refPhone = refPhone;
+        this._refName = refName;
+        this._refEmail = refEmail;
+        this._pitch = pitch;
     }
 }
