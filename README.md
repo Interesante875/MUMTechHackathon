@@ -9,4 +9,4 @@ Members:
 Izaac Chong
 Adrian Foh
 Kuah Jia Chen
-Ho Zheng Jie
+Hoh Zheng Jie
