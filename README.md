@@ -6,7 +6,7 @@ and industry experts
 
 
 Open Category:  17 July 2021 - 19 July 2021
-Theme: Career development for Fresh Graduates
+Theme: Career development for Fresh Graduates and undergraduate students
 
 Members:
 <<<<<<< HEAD

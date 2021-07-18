@@ -1,55 +1,121 @@
 <!DOCTYPE html>
-
+<html>
 <head>
-  <title>Drag and Drop File Upload</title>
+  <title>Application Page Format</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-light_blue.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
   <style>
-        .drop-zone {
-        max-width: 200px;
-        height: 200px;
-        padding: 25px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-family: "Quicksand", sans-serif;
-        font-weight: 500;
-        font-size: 20px;
-        cursor: pointer;
-        color: #cccccc;
-        border: 4px dashed #009578;
-        border-radius: 10px;
-        }
+    
+    .drop-zone {
+      max-width: 600px;
+      height: 200px;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-family: "Quicksand", sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      cursor: pointer;
+      color: #cccccc;
+      border: 4px dashed #009578;
+      border-radius: 10px;
+    }
 
-        .drop-zone--over {
-        border-style: solid;
-        }
+    .drop-zone--over {
+      border-style: solid;
+    }
 
-        .drop-zone__input {
-        display: none;
-        }
+    .drop-zone__input {
+      display: none;
+    }
 
-        .drop-zone__thumb {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        overflow: hidden;
-        background-color: #cccccc;
-        background-size: cover;
-        position: relative;
-        }
+    .drop-zone__thumb {
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      background-color: #cccccc;
+      background-size: cover;
+      position: relative;
+    }
 
-        .drop-zone__thumb::after {
-        content: attr(data-label);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        padding: 5px 0;
-        color: #ffffff;
-        background: rgba(0, 0, 0, 0.75);
-        font-size: 14px;
-        text-align: center;
-        }
+    .drop-zone__thumb::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 5px 0;
+      color: #ffffff;
+      background: rgba(0, 0, 0, 0.75);
+      font-size: 14px;
+      text-align: center;
+    }
+    /* Dropdown Button */
+    .dropbtn {
+      background-color: #04AA6D;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+    }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    /* Links inside the dropdown */
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {background-color: #ddd;}
+
+    /* Show the dropdown menu on hover */
+    .dropdown:hover .dropdown-content {display: block;}
+
+    /* Change the background color of the dropdown button when the dropdown content is shown */
+    .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+    body, html {
+  height: 100%;
+}
+
+  .bg {
+    /* The image used */
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F674010%2Fpexels-photo-674010.jpeg%3Fauto%3Dcompress%26cs%3Dtinysrgb%26dpr%3D1%26w%3D500&imgrefurl=https%3A%2F%2Fwww.pexels.com%2Fsearch%2Fbeautiful%2F&tbnid=LK6S_eMkLDVwQM&vet=12ahUKEwjT_aXumOrxAhXY4HMBHctJCEYQMygAegUIARDJAQ..i&docid=B51x0PBR9KNzvM&w=500&h=667&q=beautiful%20images&ved=2ahUKEwjT_aXumOrxAhXY4HMBHctJCEYQMygAegUIARDJAQ");
+
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
   </style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -59,10 +125,309 @@
 </head>
 
 <body>
-    <div class="drop-zone">
-      <span class="drop-zone__prompt">Drop file here or click to upload</span>
-      <input type="file" name="myFile" class="drop-zone__input">
-    </div>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Fresh Job</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="">About</a>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+            <i class="material-icons">mail</i>
+          </button>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab">
+            <i class="material-icons">facebook</i>
+          </button>
+          
+        </nav>
+      </div>
+    </header>
+    <div class="bg">
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Fresh Job</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">Home</a>
+          <a class="mdl-navigation__link" href="">About</a>
+          
+          <a class="mdl-navigation__link" href="">Facebook</a>
+          <a class="mdl-navigation__link" href="">Email</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <div class="mdl-grid">
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5><b>Personal Details</b></h5>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <!-- Textfield with Floating Label -->
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">First Name</label>
+                </div>
+              </form>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Last Name</label>
+                </div>
+              </form>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              
+              <INPUT TYPE="Radio" Name="Gender" Value="Male">Male
+              <INPUT TYPE="Radio" Name="Gender" Value="Female">Female
+              <INPUT TYPE="Radio" Name="Gender" Value="Female">Prefer Not To Say
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Phone Number</label>
+                </div>
+              </form>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Email Address</label>
+                </div>
+              </form>
+            </div>
+            <br><br>
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5><b>Date of Birth</b></h5>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <label for="birthday">Birthday:</label>
+              <input type="date" id="birthday" name="birthday">
+            </div>
+  
+            <br><br>
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5><b>Address</b></h5>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield">
+                  <textarea class="mdl-textfield__input" type="text" rows="3" maxrows="6"
+                   id="schools"></textarea>
+                  <label class="mdl-textfield__label" for="schools">Street Address 1</label>
+                </div>
+              </form>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+  
+              <div class="mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" type="text" rows="3" maxrows="6"
+                 id="schools"></textarea>
+                <label class="mdl-textfield__label" for="schools">Street Address 2</label>
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--3-col">
+             
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
+                    <label class="mdl-textfield__label" for="sample3">Country</label>
+                  </div>
+                </form>
+              
+            </div>
+            <div class="mdl-cell mdl-cell--3-col">
+              
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
+                    <label class="mdl-textfield__label" for="sample3">State</label>
+                  </div>
+                </form>
+              
+            </div>
+            <div class="mdl-cell mdl-cell--3-col">
+              
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
+                    <label class="mdl-textfield__label" for="sample3">City</label>
+                  </div>
+                </form>
+              
+            </div>
+            <div class="mdl-cell mdl-cell--3-col">
+              
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" type="text" id="sample3">
+                    <label class="mdl-textfield__label" for="sample3">Postal Code</label>
+                  </div>
+                </form>
+              
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5><b>Education History and Past Experiences</b></h5>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" type="text" rows="5" maxrows="8"
+                 id="schools"></textarea>
+                <label class="mdl-textfield__label" for="schools">Education History</label>
+              </div>
+            </div>
+      
+            <div class="mdl-cell mdl-cell--6-col">
+              <div class="mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" type="text" rows="5" maxrows="8"
+                 id="schools"></textarea>
+                <label class="mdl-textfield__label" for="schools">Past Experiences</label>
+              </div>
+            </div>
+  
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5><b>References (Optional)</b></h5>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <!-- Textfield with Floating Label -->
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Reference Name</label>
+                </div>
+              </form>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Reference Email</label>
+                </div>
+              </form>
+            </div>
+            <div class="mdl-cell mdl-cell--4-col">
+              <form action="#">
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                  <input class="mdl-textfield__input" type="text" id="sample3">
+                  <label class="mdl-textfield__label" for="sample3">Reference Phone Number</label>
+                </div>
+              </form>
+            </div>
+  
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5><b>Picth</b></h5>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <div class="mdl-textfield mdl-js-textfield">
+                <textarea class="mdl-textfield__input" type="text" rows="10" maxrows="12"
+                 id="schools"></textarea>
+                <label class="mdl-textfield__label" for="schools">Write Something...</label>
+              </div>
+            </div>
+            
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5>Resume</h5>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <div class="drop-zone">
+                <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                <input type="file" name="myFile" class="drop-zone__input">
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <h5>Extra Certifications</h5>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col">
+              <div class="drop-zone">
+                <span class="drop-zone__prompt">Drop file here or click to upload</span>
+                <input type="file" name="myFile" class="drop-zone__input">
+              </div>
+            </div>
+            <div class="mdl-cell mdl-cell--12-col"></div>
+            <div class="mdl-cell mdl-cell--10-col"></div>
+            <div class="mdl-cell mdl-cell--1-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Submit
+              </button>
+            </div>
+            <div class="mdl-cell mdl-cell--1-col">
+              <button class="mdl-button mdl-js-button mdl-button--raised">
+                Cancel
+              </button>
+            </div>
 
-  <script src="./js/ApplicationFormattingPage.js"></script>
+          </div>
+    </div>
+    
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer__middle-section">
+        
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">Features</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Updates</a></li>
+              </ul>
+            </div>
+        
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">Details</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">Specs</a></li>
+                <li><a href="#">Tools</a></li>
+                <li><a href="#">Resources</a></li>
+              </ul>
+            </div>
+        
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">Technology</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Patterns</a></li>
+                <li><a href="#">Usage</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contracts</a></li>
+              </ul>
+            </div>
+        
+            <div class="mdl-mega-footer__drop-down-section">
+              <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+              <h1 class="mdl-mega-footer__heading">FAQ</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <li><a href="#">Questions</a></li>
+                <li><a href="#">Answers</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+        
+          </div>
+        
+          <div class="mdl-mega-footer__bottom-section">
+            <div class="mdl-logo">Fresh Job @ 2021</div>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Privacy & Terms</a></li>
+            </ul>
+          </div>
+        
+        </footer>
+
+  </div>
+
 </body>
+  <script src="./js/personalDataClass.js"></script>
+  <script src="./js/forumDataClass.js"></script>
+  <script src="./js/feedDataClass.js"></script>
+  <script src="./js/ApplicationFormattingPage.js"></script>
+</html>
