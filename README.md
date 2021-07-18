@@ -24,6 +24,8 @@ https://www.figma.com/file/DZWbr3VEOpLzQJSly29omj/MUMHACKATHON?node-id=31%3A872
 
 The visio(.vsxs) file contains information about the class design
 
+This is the youtube video link
+
 
 To the judges:
 This is a web app for fresh graduates to seek jobs, internship; and for employers to post
