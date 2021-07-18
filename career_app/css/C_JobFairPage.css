@@ -38,7 +38,6 @@ html {
     background-color: #BDBCBC;
     height: 113px;
     width: 100%;
-    position: fixed;
     top: 0;
   }
   
@@ -220,7 +219,6 @@ button span:before, button span:after
 
 #ytd-url {
   display: block;
-  position: fixed;
   right: 0;
   bottom: 0;
   padding: 10px 14px;
@@ -296,12 +294,55 @@ label:before {
 }
 
 
-.JobFairsSelections1{
-    position: absolute;
-    width: 1242px;
+/*Cards*/
+.full-size-img .JobFairsSelections1{
+    width: 1150px;
     height: 270px;
-    left: 110px;
-    top: 381px;
+    margin-top: 350px;
+    margin-left: 150px;
     
     background: #C5D9E8;
+}
+
+
+.full-size-img .JobFairsSelections2{
+    width: 1150px;
+    height: 270px;
+    margin-top: 45px;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    
+    background: #C5D9E8;
+}
+
+
+.full-size-img .JobFairsSelections1 img{
+margin-left: 59.8%;
+margin-top: -12.3%;
+}
+
+.full-size-img .JobFairsSelections2 img{
+    margin-left: 59.8%;
+    margin-top: -12.5%;
+}
+
+.full-size-img .JobFairsSelections1 h3,
+.full-size-img .JobFairsSelections1 p{
+    margin-left: 5%;
+}
+
+.full-size-img .JobFairsSelections2 h3{
+    margin-left: 5%;
+}
+.full-size-img .JobFairsSelections2 p{
+    margin-left: 5%;
+    top: 30%;
+}
+
+.full-size-img .JobFairsSelections1 .Buttons .ButtonOne p{
+    margin-top: -3cm;
+}
+
+.full-size-img .JobFairsSelections2 .Buttons .ButtonOne p{
+    margin-top: -3cm;
 }
