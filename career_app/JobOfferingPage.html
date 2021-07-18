@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='css/JobOfferingPage.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-light_blue.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>Job Offerings</title>
+</head>
+<body>
+    <header class="header">
+        <div class="inner_header">
+            <div class="logo_container">
+                <a href="" class="Logo"><img src="img/logo.png" alt="Logo"></a>
+            </div>
+            <ul>
+                <li><a href="">Latest Job</a></li>
+                <li><a href="">My preferences</a></li>
+                <li><a href="">Job Application Status</a></li>
+                <li><a href="">Forum Discussion</a></li>
+                <li><a href=""><img src="img/notification.png" alt="notification" width="40px" height="40px"></a></li>
+                <li><a href=""><img src="img/profile.png" alt="notification" width="40px" height="40px"></a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <div class="pimg1">
+        <div class="ptext">
+            <span class='border'>
+                Parallax Website
+            </span>
+        </div>
+    </div>
+    <section class="section section-light">
+        <h2>Searching for Jobs</h2>
+        <div class="input-wrapper">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search for jobs">
+            <div class="fa fa-times"></div>
+        </div>
+        <div class="advanced-search-settings">
+            <h3>Advanced search settings</h3>
+            <div class="search-setting">
+                <label for="jobTitle" >Job Title</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-user-md"></i>
+                    <input type="text" placeholder="Job Title" id="jobTitle">
+                </div>
+            </div>
+            <div class="search-setting">
+                <label for="companyName" >Company Name (OPTIONAL)</label>
+                <div class="input-wrapper">
+                    <i class="far fa-building"></i>
+                    <input type="text" placeholder="Company Name" id="companyName">
+                </div>
+            </div>
+            <div class="search-setting">
+                <label for="salary" >Salary</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-money-check-alt"></i>
+                    <input type="text" placeholder="Salary Expectation" id="salary">
+                </div>
+            </div>
+            <div class="search-setting">
+                <label for="address" >Area, City or Town</label>
+                <div class="input-wrapper">
+                    <i class="fas fa-city"></i>
+                    <input type="text" placeholder="Area, City or Town" id="address">
+                </div>
+            </div>
+            <div class="search-setting">
+                <table>
+                    <tr>
+                        <td>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
+                                <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label">Internship</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                                <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label">Full Time</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-3">
+                                <input type="checkbox" id="checkbox-3" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label">Part Time</span>
+                            </label>
+                        </td>
+                        <td>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-4">
+                                <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input">
+                                <span class="mdl-checkbox__label">Contract</span>
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+     
+            <div class="search-setting">
+                <span class="SignUpButtonBox"><a class="SignupButton" href="">Search</a></span>
+            </div> 
+        </div>
+        
+    </section>
+    
+
+    <div class="pimg2">
+        <div class="ptext">
+            <span class='border trans'>
+                Image Two Text
+            </span>
+        </div>
+    </div>
+    <section class="section section-dark">
+        <h2>Most Popular Jobs</h2>
+        <ul class="demo-list-three mdl-list">
+            <li class="mdl-list__item mdl-list__item--three-line">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons">business</i>
+                    <span>Web Designing Internship At Google</span>
+                    <span class="mdl-list__item-text-body">
+                        Requires applicants to have knowlegde on Django, Flask and Python. Located at Kuala Lumpur.
+                    </span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons">business</i>
+                    <span>Business Analytics At EY</span>
+                    <span class="mdl-list__item-text-body">
+                        Requires applicants to be pasionate team worker, and ave excellent communication skills.
+                    </span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                </span>
+            </li>
+            <li class="mdl-list__item mdl-list__item--three-line">
+                <span class="mdl-list__item-primary-content">
+                    <i class="material-icons">business</i>
+                    <span>Junior Accountant at ABC</span>
+                    <span class="mdl-list__item-text-body">
+                        Requires applicants work on different shifts, and be knowledgable about taxation system. Located at Penang, Butterworth.
+                    </span>
+                </span>
+                <span class="mdl-list__item-secondary-content">
+                    <a class="mdl-list__item-secondary-action" href="#"><i class="material-icons">star</i></a>
+                </span>
+            </li>
+            
+          </ul> 
+    </section>
+
+    <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer__middle-section">
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Features</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          </div>
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Details</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Specs</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Technology</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Patterns</a></li>
+              <li><a href="#">Usage</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contracts</a></li>
+            </ul>
+          </div>
+      
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">FAQ</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Questions</a></li>
+              <li><a href="#">Answers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+      
+        </div>
+      
+        <div class="mdl-mega-footer__bottom-section">
+          <div class="mdl-logo">Fresh Job @ 2021</div>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+          </ul>
+        </div>
+      
+    </footer>
+
+</body>
+
+    <script src="js/HeaderScrollEffect.js"></script>
+</html>
