@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
   
 body, html{
@@ -13,6 +14,8 @@ body, html{
     color: #666;
     font-family: "Lato",sans-serif;
 }
+
+
 
 .pimg1{
     background-image:url("../img/BackgroundOne.png");
@@ -148,6 +151,8 @@ header.sticky ul li a{
 
 .pimg1 a:hover{
     transform: translateY(-8px);
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 
@@ -181,6 +186,8 @@ header.sticky ul li a{
 }
 
 .pimg2 .LoginBackground img{
+    scroll-snap-align: center; /*NEW*/
+
     position: absolute;
     width: 400px;
     height: 513px;
