@@ -1,0 +1,238 @@
+
+
+body, html{
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+}
+
+/*Navigation bar*/
+
+header {
+    position: fixed;
+    width: 100%;
+    height: 16%;
+    display: block;
+    transition: 0.6s;
+    padding: 40px 113px;
+    z-index: 10;
+}
+
+header .inner_header{
+    width:100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+
+}
+
+header .logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+header .logo_container h1{
+    height: 100%;
+    display: table-cell;
+    vertical-align: text-bottom;
+    font-family: "lato", sans-serif;
+    font-weight: 500;
+}
+
+header ul a{
+    height: 100%;
+    display: table;
+    float: left;
+    padding: 0 20px;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+      position: relative;
+      margin: 0 10px;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 1px;
+      font-weight: 450px;
+      transition: 0.6s;
+}
+
+header.sticky{
+    padding: 5px 113px;
+    background: #BDBCBC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header.sticky ul li a{
+    position: relative;
+    margin: 0 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+    font-weight: 450px;
+    transition: 0.6s;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e26d5c;
+    padding: 25px;
+    width:50%;
+    border-radius: 0.5rem;
+    color: white;
+    
+}
+
+input {
+    margin: 0 15px 0 15px;
+    height:25%;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #e26d5c;
+    color: white;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+::placeholder {
+    color: #f0b2a8;
+}
+
+
+.pimg1, .pimg2, .pimg3{
+    position:relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    /*
+        fixed = scroll
+        scroll = normal
+    */
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url('../img/image1.jpg');
+    min-height: 100%;
+}
+.pimg2{
+    background-image: url('../img/image2.jpg');
+    min-height: 5%;
+}
+.pimg3{
+    background-image: url('../img/image3.jpg');
+    min-height: 100%;
+}
+
+.section{
+    text-align: center;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color:#666;
+    padding: 10px 15px 280px 15px;
+    text-align: left;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color:#ddd;
+    text-align: left;
+}
+
+.ptext{
+    position:absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+}
+
+label{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: "lato", sans-serif;
+}
+
+.advanced-search-settings{
+    display: inline block;
+    width: 100%;
+    height: 100%;
+}
+
+.advanced-search-settings h3{
+    padding: 25px 25px;
+    width: 100%;
+}
+
+.search-setting{
+    width: 50%;
+    float: left;
+    
+
+}
+
+.SignUpButtonBox {
+    padding: 30px;
+    background-color: #8f5858;
+    border-radius: 15px;
+}
+
+.SignUpButtonBox:hover{
+    transform: translateY(-4px);
+}
+
+.SignUpButtonBox{
+    padding: 15px;
+    display: block;
+    transition: 300ms;
+    float: right;
+    
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.SignUpButtonBox .SignupButton{
+    text-decoration: none;
+    color: #000000;
+}
+
+.section.section-dark ul li{
+    background-color: #fff;
+    width:95%;
+    align-self: center;
+} 

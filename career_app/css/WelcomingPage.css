@@ -166,12 +166,14 @@ header.sticky ul li a{
     color: #FFFFFF;
 }
 
+
+
 .pimg2 .LoginPage{
     position: absolute;
     width: 432px;
     height: 91px;
     left: 70px;
-    top: 138px;
+    top: 100px;
     
     font-family: Roboto;
     font-style: normal;
@@ -196,7 +198,7 @@ header.sticky ul li a{
     width: 123px;
     height: 51px;
     left: 819px;
-    top: 159px;
+    top: 125px;
 
     background: #C5D9E8;
     border-radius: 15px;
@@ -207,7 +209,7 @@ header.sticky ul li a{
     width: 123px;
     height: 51px;
     left: 976px;
-    top: 159px;
+    top: 125px;
     
     background: #C5D9E8;
     border-radius: 15px;

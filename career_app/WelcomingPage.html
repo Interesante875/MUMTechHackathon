@@ -70,8 +70,8 @@
         <span class="LoginPage">Login Page</span>
         <span class="LoginBackground"><img src="img/LoginBackground.png" alt=""></span>
         <div class="UserButtons">
-            <span class="Applicants"><a class="c1" href=""><p class="p1">Applicants</p></a></span>
-            <span class="Employers"><a class="c2" href=""><p class="p2">Employers</p></a></span>
+            <span class="Applicants"><a class="c1" href=""><span class="p1">Applicants</span></a></span>
+            <span class="Employers"><a class="c2" href=""><span class="p2">Employers</span></a></span>
         </div>
         <div class="SocialMediaIcons">
             <a href=""><img class="img1" src="img/facebook.png" alt="Facebook"></a>
@@ -85,12 +85,7 @@
         <span class="SignUpButtonBox"><a class="SignupButton" href="">Sign up</a></span>
     </div>
 
-    <script type="text/javascript">
-        window.addEventListener("scroll", function () {
-            var header = document.querySelector("header");
-            header.classList.toggle("sticky", window.scrollY > 0);
-        })
-    </script>
+    
 </body>
-
+    <script src="js/HeaderScrollEffect.js"></script>
 </html>
