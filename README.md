@@ -9,12 +9,6 @@ Open Category:  17 July 2021 - 19 July 2021
 Theme: Career development for Fresh Graduates and undergraduate students
 
 Members:
-<<<<<<< HEAD
-Izaac Chong
-Adrian Foh
-Kuah Jia Chen
-Hoh Zheng Jie
-=======
 Izaac Chong,
 Adrian Foh Wai Mun,
 Kuah Jia Chen,
@@ -30,4 +24,3 @@ https://www.figma.com/file/DZWbr3VEOpLzQJSly29omj/MUMHACKATHON?node-id=31%3A872
 
 The visio file contains information about the class design
 
->>>>>>> 40e2ccb008bec5329289c0d43a829524ea996cb8
