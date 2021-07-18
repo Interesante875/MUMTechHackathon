@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to some app name</title>
+    <link rel="stylesheet" href="css/WelcomingPage.css">
+</head>
+
+<body>
+    <header>
+        <a href="" class="Logo"><img src="img/logo.png" alt="Logo"></a>
+
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+
+            <li>
+                <a href="">About</a>
+            </li>
+
+            <li>
+                <a href="">Sign up</a>
+            </li>
+
+            <li>
+                <a href="">Log in</a>
+            </li>
+
+            <li>
+                <a href=""><img src="img/facebook.png" alt="Facebook"></a>
+            </li>
+
+            <li>
+                <a href=""><img src="img/gmail.png" alt="E-mail"></a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="pimg1">
+        <div class="FirstLine">
+            <p>Welcome</p>
+        </div>
+        <div class="SecondLine">
+            <p>Fresh graduates or students looking for a job?</p>
+        </div>
+
+        <a class="ButtonOne" href="#">
+            <p>Let's get started</p>
+        </a>
+    </div>
+
+
+
+    <section class="section section-light">
+        <h2>Section one</h2>
+        <p>BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+            BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+        </p>
+    </section>
+
+    <div class="pimg2">
+        <span class="LoginPage">Login Page</span>
+        <span class="LoginBackground"><img src="img/LoginBackground.png" alt=""></span>
+        <div class="UserButtons">
+            <span class="Applicants"><a class="c1" href=""><p class="p1">Applicants</p></a></span>
+            <span class="Employers"><a class="c2" href=""><p class="p2">Employers</p></a></span>
+        </div>
+        <div class="SocialMediaIcons">
+            <a href=""><img class="img1" src="img/facebook.png" alt="Facebook"></a>
+            <a href=""><img class="img2" src="img/gmail.png" alt="E-mail"></a>
+            <a href=""><img class="img3" src="img/linkedin.png" alt=""></a>
+        </div>
+        <input class="Username" type="text" id="username">
+        <input class="Password" type="text" id="password">
+        <span class="Login"><a class="LoginButton" href=""><p>Login</p></a></span>
+        <a class="NewUserSignup" href="">New User? Sign Up Free Now.</a></span>
+        <span class="SignUpButtonBox"><a class="SignupButton" href="">Sign up</a></span>
+    </div>
+
+    <script type="text/javascript">
+        window.addEventListener("scroll", function () {
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+</body>
+
+</html>

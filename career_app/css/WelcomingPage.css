@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    font-family: "Lato",sans-serif;
+}
+
+.pimg1{
+    background-image:url("../img/BackgroundOne.png");
+    height: 100%;
+}
+
+.pimg2{
+    background-image:url("../img/BackgroundTwo.png");
+    height: 100%;
+}
+
+.pimg1, .pimg2{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+/*Navigation bar*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 113px;
+    z-index: 10000000;
+}
+
+header .logo{
+    position: relative;
+    width: 70px;
+    height: 76px;
+    left: 54px;
+    top: 19px;
+    transition: 0.6s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+      position: relative;
+      list-style: none;
+}
+
+header ul li a {
+      position: relative;
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      letter-spacing: 2px;
+      font-weight: 500px;
+      transition: 0.6s;
+}
+
+header.sticky{
+    padding: 5px 113px;
+    background: #BDBCBC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header.sticky ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+.pimg1 .FirstLine{
+    position: absolute;
+    width: 620px;
+    height: 100px;
+    left: 396px;
+    top: 116px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.pimg1 .SecondLine{
+    position: absolute;
+    width: 1073px;
+    height: 294px;
+    left: 221px;
+    top: 214px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 98px;
+    text-align: center;
+
+    color: #000000;
+}
+
+.pimg1 a{
+    position: absolute;
+    width: 561px;
+    height: 80px;
+    left: 439px;
+    top: 444px;
+
+    background: #265361;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+.pimg1 a:hover{
+    transform: translateY(-8px);
+}
+
+
+.pimg1 a p{
+    position: absolute;
+    padding-left: 164px;
+    padding-top: 10px;
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.pimg2 .LoginPage{
+    position: absolute;
+    width: 432px;
+    height: 91px;
+    left: 70px;
+    top: 138px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    color: #000000;
+}
+
+.pimg2 .LoginBackground img{
+    position: absolute;
+    width: 400px;
+    height: 513px;
+    left: 757px;
+    top: 106px;
+
+    background: url(image.png);
+    border-radius: 100px;
+}
+
+.pimg2 .UserButtons .Applicants{
+    position: absolute;
+    width: 123px;
+    height: 51px;
+    left: 819px;
+    top: 159px;
+
+    background: #C5D9E8;
+    border-radius: 15px;
+}
+
+.pimg2 .UserButtons .Employers{
+    position: absolute;
+    width: 123px;
+    height: 51px;
+    left: 976px;
+    top: 159px;
+    
+    background: #C5D9E8;
+    border-radius: 15px;
+}
+
+.pimg2 .UserButtons .Applicants .c1:link,
+.pimg2 .UserButtons .Applicants .c1:visited,
+.pimg2 .UserButtons .Employers .c2:link,
+.pimg2 .UserButtons .Employers .c2:visited
+{
+    text-decoration: none;
+}
+
+.pimg2 .UserButtons .Applicants:hover,
+.pimg2 .UserButtons .Employers:hover{
+    transform: translateY(-4px);
+}
+
+.pimg2 .UserButtons .Applicants .c1,
+.pimg2 .UserButtons .Employers .c2{
+    display: inline-block;
+    transition: 300ms;
+}
+
+.pimg2 .UserButtons .Applicants .c1 .p1{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #000000;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+.pimg2 .UserButtons .Employers .c2 .p2{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #000000;
+    margin-top: 15%;
+    margin-left: 10%;
+}
+
+.pimg2 .SocialMediaIcons a .img1{
+    position: absolute;
+    left: 64.69%;
+    right: 33.96%;
+    top: 34.22%;
+    bottom: 64.26%;
+
+    width: 1.3cm;
+    height: 1.3cm;
+}
+
+.pimg2 .SocialMediaIcons a .img2{
+    position: absolute;
+    left: 69.10%;
+    right: 27.7%;
+    top: 34.39%;
+    bottom: 65.3%;
+    
+    width: 1.3cm;
+    height: 1.3cm;
+}
+
+.pimg2 .SocialMediaIcons a .img3{
+    position: absolute;
+    left: 73.85%;
+    right: 21.32%;
+    top: 35.3%;
+    bottom: 65.33%;
+
+    width: 1cm;
+    height: 1cm;
+}
+
+.pimg2 .Username{
+    position: absolute;
+    width: 292px;
+    height: 49px;
+    left: 813px;
+    top: 292px;
+
+    background: #C5D9E8;
+    border-radius: 15px;
+}
+
+.pimg2 .Password{
+    position: absolute;
+    width: 292px;
+    height: 49px;
+    left: 813px;
+    top: 358px;
+
+    background: #C5D9E8;
+    border-radius: 15px;
+}
+
+.pimg2 .Login .LoginButton {
+    position: absolute;
+    width: 152px;
+    height: 45px;
+    left: 885px;
+    top: 436px;
+
+    background: #C5D9E8;
+    border-radius: 15px;
+}
+
+.pimg2 .Login .LoginButton:hover{
+    transform: translateY(-4px);
+}
+
+.pimg2 .Login .LoginButton{
+    display: inline-block;
+    transition: 300ms;
+}
+
+.pimg2 .Login .LoginButton{
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.pimg2 .NewUserSignup{
+    text-decoration: none;
+    position: absolute;
+    width: 457px;
+    height: 34px;
+    left: 728px;
+    top: 492px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+
+    color: #FCFFFD;
+}
+
+.pimg2 .SignUpButtonBox {
+    position: absolute;
+    width: 187px;
+    height: 52px;
+    left: 868px;
+    top: 534px;
+    
+    background: #C5D9E8;
+    border-radius: 15px;
+}
+
+.pimg2 .SignUpButtonBox:hover{
+    transform: translateY(-4px);
+}
+
+.pimg2 .SignUpButtonBox{
+    display: inline-block;
+    transition: 300ms;
+
+    text-decoration: none;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+.pimg2 .SignUpButtonBox .SignupButton{
+    text-decoration: none;
+    color: #000000;
+}
