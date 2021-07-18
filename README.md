@@ -20,7 +20,7 @@ analysis of the marketability of the web app.
 https://docs.google.com/document/d/1DUfSIDcr0H4FQK2GNbc_mkkfdj9cqQ7qibmrNfNQY1k/edit?usp=sharing (View only access)
 
 The link below shows the wireframe (UI/UX) 
-https://www.figma.com/file/DZWbr3VEOpLzQJSly29omj/MUMHACKATHON?node-id=31%3A872
+https://www.figma.com/file/DZWbr3VEOpLzQJSly29omj/MUMHACKATHON?node-id=0%3A1
 
 The visio(.vsxs) file contains information about the class design
 
