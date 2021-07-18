@@ -151,16 +151,15 @@ header.sticky ul li a{
     float: left;
     justify-content: center;
     text-align: center;
-    max-width: 30%;
+    max-width: 25%;
     height: 80%;
-    left: 2px;
+    left: 3%;
     list-style:lower-roman;
     background-color: lightblue;
     line-height: 0.5em;
     border-radius: 30px;
-    padding: 3px;
-    
-    
+    padding: 5%;
+
 }
 
 .selection-panel span{
@@ -170,7 +169,7 @@ header.sticky ul li a{
     line-height: 3.0em;
     background-color: rgb(14, 105, 101);
     border-radius: 40px;
-    padding: 15px 20px;
+    padding: 1% 3%;
     color: #fff;
     line-break: strict;
     border-spacing: 15%;
@@ -189,10 +188,10 @@ header.sticky ul li a{
     list-style:lower-roman;
     background-color: lightblue;
     line-height: 0.5em;
-    border-radius: 2px;
-    margin: 10px;
-    top: 125px;
-    left: 20px;
+    border-radius: 0.2%;
+    margin: 12%;
+    top: 70%;
+    left: 4%;
 }
 
 .forumThreadList ul{
